@@ -310,11 +310,18 @@ wss.on('connection', (ws, req) => {
     }
     tickManager.removePlayer(player.id);
     clientSockets.delete(ws);
-  });
+});
 });
 
 function handleClientAction(player, msg, ws) {
   switch (msg.type) {
+    case 'SET_AGENT_IDENTITY': {
+      if (msg.username) player.username = sanitizeUsername(msg.username);
+      if (msg.badge) player.badge = msg.badge;
+      player.isAgent = true;
+      break;
+    }
+
     case 'LOGIN_SESSION': {
       const account = accountManager.validateSession(msg.sessionToken);
       if (account && account.character) {
