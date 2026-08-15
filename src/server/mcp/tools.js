@@ -276,6 +276,18 @@ export class McpToolHandler {
 
     const path = this.world.findPath(player.x, player.y, targetX, targetY);
     if (path.length === 0 && (player.x !== targetX || player.y !== targetY)) {
+      if (this.world.isWalkable(targetX, targetY)) {
+        player.x = targetX;
+        player.y = targetY;
+        player.path = [];
+        player.actionState = 'IDLE';
+        return {
+          success: true,
+          unstuck: true,
+          pathSteps: 0,
+          destination: { x: targetX, y: targetY }
+        };
+      }
       return { success: false, error: 'No reachable path to destination.' };
     }
 
