@@ -23,12 +23,12 @@ export class McpServer {
         username: cleanName,
         isAgent: true,
         agentType,
-        x: 15 + Math.floor(Math.random() * 3),
-        y: 15 + Math.floor(Math.random() * 3)
+        x: 88 + Math.floor(Math.random() * 5),
+        y: 130 + Math.floor(Math.random() * 5)
       });
       this.tickManager.addPlayer(player);
       this.agentSessions.set(sessionId, player);
-      console.log(`[MCP Server] Spawned new AI Agent Adventurer: ${player.username} (${player.badge})`);
+      console.log(`[MCP Server] Spawned new AI Agent Adventurer: ${player.username} (${player.badge}) at (${player.x}, ${player.y})`);
     }
 
     return { sessionId, player };
