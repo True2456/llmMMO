@@ -17,6 +17,14 @@ export class McpServer {
     const cleanName = sanitizeUsername(agentName);
     const sessionId = `agent_${cleanName.toLowerCase()}`;
 
+    // 1. Check if an active human or bot player with this name already exists in the world
+    for (const activePlayer of this.tickManager.players.values()) {
+      if (activePlayer.username && activePlayer.username.toLowerCase() === cleanName.toLowerCase()) {
+        return { sessionId, player: activePlayer };
+      }
+    }
+
+    // 2. Check existing session cache
     let player = this.agentSessions.get(sessionId);
     if (!player) {
       player = new Player({

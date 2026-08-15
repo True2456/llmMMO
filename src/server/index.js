@@ -175,7 +175,8 @@ const server = http.createServer((req, res) => {
     req.on('end', () => {
       try {
         const payload = JSON.parse(body);
-        const agentName = req.headers['x-agent-name'] || 'AIAgent';
+        const queryChar = parsedUrl.query ? (new URLSearchParams(parsedUrl.query).get('character') || new URLSearchParams(parsedUrl.query).get('agentName')) : null;
+        const agentName = req.headers['x-agent-name'] || queryChar || payload.character || payload.agentName || 'AIAgent';
         const agentType = req.headers['x-agent-type'] || 'Claude-3.5';
         const response = mcpServer.handleJsonRpc(payload, agentName, agentType);
         res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -185,6 +186,41 @@ const server = http.createServer((req, res) => {
         res.end(JSON.stringify({ jsonrpc: '2.0', error: { code: -32700, message: 'Parse error' } }));
       }
     });
+    return;
+  }
+
+  // 5b. MCP Quick Configuration Helper
+  if (pathname === '/api/mcp/config') {
+    const character = (parsedUrl.query ? new URLSearchParams(parsedUrl.query).get('character') : null) || 'MyTribesman';
+    const host = req.headers.host || 'llmmmo.onrender.com';
+    const protocol = req.headers['x-forwarded-proto'] || 'https';
+    const baseUrl = `${protocol}://${host}`;
+    const mcpUrl = `${baseUrl}/mcp`;
+
+    res.writeHead(200, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({
+      character,
+      mcpUrl,
+      claudeDesktop: {
+        mcpServers: {
+          "prima-mmorpg": {
+            command: "npx",
+            args: ["-y", "@modelcontextprotocol/server-fetch", `${mcpUrl}?character=${encodeURIComponent(character)}`]
+          }
+        }
+      },
+      cursor: {
+        mcp: {
+          "prima-mmorpg": {
+            url: `${mcpUrl}?character=${encodeURIComponent(character)}`,
+            headers: {
+              "X-Agent-Name": character
+            }
+          }
+        }
+      },
+      curlExample: `curl -X POST "${mcpUrl}" -H "Content-Type: application/json" -H "X-Agent-Name: ${character}" -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"realm_look","arguments":{}}}'`
+    }));
     return;
   }
 

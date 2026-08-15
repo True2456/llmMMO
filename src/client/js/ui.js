@@ -21,6 +21,7 @@ export class UIManager {
     this.initEventListeners();
     this.initAuthModal();
     this.initDialogueAndCraftingModals();
+    this.initMcpSettings();
     this.renderAtlas();
     this.renderQuests({});
   }
@@ -245,6 +246,10 @@ export class UIManager {
 
   updatePlayerStats(self) {
     if (!self) return;
+
+    if (self.username) {
+      this.updateMcpCharacter(self.username);
+    }
 
     document.getElementById('stat-hp-text').textContent = `${self.hp} / ${self.maxHp}`;
     document.getElementById('stat-hp-bar').style.width = `${Math.max(0, Math.min(100, (self.hp / self.maxHp) * 100))}%`;
@@ -806,5 +811,290 @@ export class UIManager {
 
     modal.classList.remove('hidden');
   }
+
+  /* ==========================================================================
+     AI & MCP Agent Control Center Management
+     ========================================================================== */
+  initMcpSettings() {
+    this.currentCharName = 'Tribesman';
+
+    const modal = document.getElementById('mcp-modal');
+    const btnOpenHeader = document.getElementById('btn-mcp-settings');
+    const btnOpenPanel = document.getElementById('btn-mcp-open-modal');
+    const btnClose = document.getElementById('btn-mcp-close');
+
+    const openModal = () => {
+      this.renderMcpSnippets();
+      if (modal) modal.classList.remove('hidden');
+    };
+
+    const closeModal = () => {
+      if (modal) modal.classList.add('hidden');
+    };
+
+    if (btnOpenHeader) btnOpenHeader.addEventListener('click', openModal);
+    if (btnOpenPanel) btnOpenPanel.addEventListener('click', openModal);
+    if (btnClose) btnClose.addEventListener('click', closeModal);
+
+    // Config Tabs
+    const tabBtns = document.querySelectorAll('.mcp-tab-btn');
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabBtns.forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.mcp-config-pane').forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetPane = document.getElementById(`pane-config-${btn.dataset.configTab}`);
+        if (targetPane) targetPane.classList.add('active');
+      });
+    });
+
+    // Helper for clipboard copying with visual feedback
+    const setupCopy = (btnId, textGetter) => {
+      const btn = document.getElementById(btnId);
+      if (!btn) return;
+      btn.addEventListener('click', async () => {
+        const text = typeof textGetter === 'function' ? textGetter() : textGetter;
+        try {
+          await navigator.clipboard.writeText(text);
+          const oldText = btn.textContent;
+          btn.textContent = '✓ Copied!';
+          btn.classList.add('copied');
+          setTimeout(() => {
+            btn.textContent = oldText;
+            btn.classList.remove('copied');
+          }, 1800);
+        } catch (err) {
+          console.warn('Clipboard write error:', err);
+        }
+      });
+    };
+
+    // Copy Handlers
+    const getBaseUrl = () => window.location.origin;
+    const getMcpUrl = () => `${getBaseUrl()}/mcp`;
+
+    setupCopy('btn-mcp-copy-endpoint', () => getMcpUrl());
+    setupCopy('btn-mcp-copy-quick-url', () => getMcpUrl());
+    setupCopy('btn-mcp-copy-header', () => `X-Agent-Name: ${this.currentCharName}`);
+
+    setupCopy('btn-copy-claude-snippet', () => document.getElementById('code-claude-snippet')?.textContent || '');
+    setupCopy('btn-mcp-copy-claude', () => document.getElementById('code-claude-snippet')?.textContent || '');
+
+    setupCopy('btn-copy-cursor-snippet', () => document.getElementById('code-cursor-snippet')?.textContent || '');
+    setupCopy('btn-mcp-copy-cursor', () => document.getElementById('code-cursor-snippet')?.textContent || '');
+
+    setupCopy('btn-copy-python-snippet', () => document.getElementById('code-python-snippet')?.textContent || '');
+    setupCopy('btn-copy-node-snippet', () => document.getElementById('code-node-snippet')?.textContent || '');
+    setupCopy('btn-copy-curl-snippet', () => document.getElementById('code-curl-snippet')?.textContent || '');
+
+    // Tool Tester Argument Presets
+    const toolParamPresets = {
+      realm_look: '{}',
+      realm_status: '{}',
+      realm_move: '{"targetX": 92, "targetY": 130}',
+      realm_gather: '{"nodeId": "node_copper_1"}',
+      realm_combat: '{"npcId": "npc_boar_1"}',
+      realm_chat: '{"text": "Greetings travelers! My AI companion is online."}',
+      realm_pickup: '{"itemId": "item_ground_1"}',
+      realm_trade: '{"action": "BUY", "itemId": "ingot_bronze", "quantity": 1}',
+      realm_quest: '{"npcId": "npc_elder_kael", "dialogueChoice": "accept"}'
+    };
+
+    const toolSelect = document.getElementById('mcp-test-tool-select');
+    const paramInput = document.getElementById('mcp-test-param-input');
+    if (toolSelect && paramInput) {
+      toolSelect.addEventListener('change', () => {
+        paramInput.value = toolParamPresets[toolSelect.value] || '{}';
+      });
+    }
+
+    // Live In-Browser Tool Execution
+    const btnExecute = document.getElementById('btn-mcp-test-execute');
+    const statusSpan = document.getElementById('mcp-test-status');
+    const responsePre = document.getElementById('mcp-test-response-pre');
+
+    if (btnExecute && toolSelect && paramInput && responsePre) {
+      btnExecute.addEventListener('click', async () => {
+        const toolName = toolSelect.value;
+        let args = {};
+        try {
+          args = JSON.parse(paramInput.value || '{}');
+        } catch (e) {
+          if (statusSpan) statusSpan.textContent = 'JSON Syntax Error';
+          responsePre.textContent = `Error parsing arguments: ${e.message}\nMake sure your parameters are valid JSON format e.g. {"targetX": 90, "targetY": 130}`;
+          return;
+        }
+
+        if (statusSpan) statusSpan.textContent = 'Executing...';
+        btnExecute.disabled = true;
+
+        try {
+          const res = await fetch('/mcp', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Agent-Name': this.currentCharName
+            },
+            body: JSON.stringify({
+              jsonrpc: '2.0',
+              id: Date.now(),
+              method: 'tools/call',
+              params: {
+                name: toolName,
+                arguments: args
+              }
+            })
+          });
+
+          const data = await res.json();
+          if (statusSpan) statusSpan.textContent = `✓ ${res.status} OK`;
+          responsePre.textContent = JSON.stringify(data, null, 2);
+          if (this.audio) this.audio.playClick();
+        } catch (err) {
+          if (statusSpan) statusSpan.textContent = 'Request Failed';
+          responsePre.textContent = `Execution Error: ${err.message}`;
+        } finally {
+          btnExecute.disabled = false;
+        }
+      });
+    }
+
+    this.renderMcpSnippets();
+  }
+
+  updateMcpCharacter(charName) {
+    if (!charName || charName === this.currentCharName) return;
+    this.currentCharName = charName;
+
+    const quickName = document.getElementById('mcp-quick-char-name');
+    const modalName = document.getElementById('mcp-modal-char-name');
+    const headerCode = document.getElementById('mcp-modal-header-code');
+
+    if (quickName) quickName.textContent = charName;
+    if (modalName) modalName.textContent = charName;
+    if (headerCode) headerCode.textContent = `X-Agent-Name: ${charName}`;
+
+    this.renderMcpSnippets();
+  }
+
+  renderMcpSnippets() {
+    const origin = window.location.origin || 'https://llmmmo.onrender.com';
+    const mcpUrl = `${origin}/mcp`;
+    const charName = this.currentCharName || 'Tribesman';
+
+    const quickUrl = document.getElementById('mcp-quick-url');
+    const endpointCode = document.getElementById('mcp-modal-endpoint-code');
+    if (quickUrl) quickUrl.textContent = mcpUrl;
+    if (endpointCode) endpointCode.textContent = mcpUrl;
+
+    // 1. Claude Desktop Config
+    const claudeJson = {
+      "mcpServers": {
+        "prima-mmorpg": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "@modelcontextprotocol/server-fetch",
+            `${mcpUrl}?character=${encodeURIComponent(charName)}`
+          ]
+        }
+      }
+    };
+    const claudeEl = document.getElementById('code-claude-snippet');
+    if (claudeEl) claudeEl.textContent = JSON.stringify(claudeJson, null, 2);
+
+    // 2. Cursor / Windsurf Config
+    const cursorJson = {
+      "mcp": {
+        "prima-mmorpg": {
+          "url": `${mcpUrl}?character=${encodeURIComponent(charName)}`,
+          "headers": {
+            "X-Agent-Name": charName
+          }
+        }
+      }
+    };
+    const cursorEl = document.getElementById('code-cursor-snippet');
+    if (cursorEl) cursorEl.textContent = JSON.stringify(cursorJson, null, 2);
+
+    // 3. Python Agent
+    const pythonCode = `import urllib.request, json
+
+MCP_URL = "${mcpUrl}"
+CHARACTER = "${charName}"
+
+def call_mcp(tool_name, arguments={}):
+    payload = json.dumps({
+        "jsonrpc": "2.0",
+        "id": 1,
+        "method": "tools/call",
+        "params": {"name": tool_name, "arguments": arguments}
+    }).encode("utf-8")
+    
+    req = urllib.request.Request(
+        MCP_URL,
+        data=payload,
+        headers={"Content-Type": "application/json", "X-Agent-Name": CHARACTER}
+    )
+    with urllib.request.urlopen(req) as res:
+        return json.loads(res.read().decode("utf-8"))
+
+# Look around 15x15 tiles & perceive environment
+view = call_mcp("realm_look")
+print("Surrounding Nodes & Monsters:", view)
+
+# Check character's 20 skills & health
+status = call_mcp("realm_status")
+print("Skills & HP:", status)
+
+# Harvest nearby copper or tin
+gather_res = call_mcp("realm_gather", {"nodeId": "node_copper_1"})
+print("Gathering Outcome:", gather_res)
+`;
+    const pythonEl = document.getElementById('code-python-snippet');
+    if (pythonEl) pythonEl.textContent = pythonCode;
+
+    // 4. Node.js Agent
+    const nodeCode = `const MCP_URL = "${mcpUrl}";
+const CHARACTER = "${charName}";
+
+async function callTool(name, args = {}) {
+  const res = await fetch(MCP_URL, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Agent-Name": CHARACTER
+    },
+    body: JSON.stringify({
+      jsonrpc: "2.0",
+      id: Date.now(),
+      method: "tools/call",
+      params: { name, arguments: args }
+    })
+  });
+  return await res.json();
 }
+
+// 1. Inspect Character & Surroundings
+const perception = await callTool("realm_look");
+console.log("World State:", perception);
+
+// 2. Move or Gather
+const moveRes = await callTool("realm_move", { direction: "north" });
+console.log("Move Result:", moveRes);
+`;
+    const nodeEl = document.getElementById('code-node-snippet');
+    if (nodeEl) nodeEl.textContent = nodeCode;
+
+    // 5. cURL
+    const curlCode = `curl -X POST "${mcpUrl}" \\
+  -H "Content-Type: application/json" \\
+  -H "X-Agent-Name: ${charName}" \\
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"realm_look","arguments":{}}}'`;
+    const curlEl = document.getElementById('code-curl-snippet');
+    if (curlEl) curlEl.textContent = curlCode;
+  }
+}
+
 

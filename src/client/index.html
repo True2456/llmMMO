@@ -41,6 +41,7 @@
       </div>
 
       <div class="top-actions">
+        <button id="btn-mcp-settings" class="retro-btn btn-mcp" title="Configure AI & MCP Character Automation" style="color: #64ffda; border-color: #64ffda; text-shadow: 0 0 5px rgba(100,255,218,0.5);">🤖 MCP Agent</button>
         <a href="/sprites_viewer.html" target="_blank" id="btn-sprites-inspector" class="retro-btn" title="Inspect all individual sprite assets directly" style="text-decoration:none; display:inline-flex; align-items:center; color:#ffd700;">🎨 Sprites Atlas</a>
         <button id="btn-audio-toggle" class="retro-btn" title="Toggle Sound FX">🔊 Sound: ON</button>
         <button id="btn-web3-connect" class="retro-btn btn-web3">🦊 Connect Web3</button>
@@ -78,6 +79,7 @@
           <button class="hud-tab" data-tab="atlas" title="World Atlas & Dungeons">🗺️ Atlas</button>
           <button class="hud-tab" data-tab="exchange" title="Grand Exchange">🏛️ Market</button>
           <button class="hud-tab" data-tab="web3" title="Web3 & Crypto">💎 Web3</button>
+          <button class="hud-tab" data-tab="mcp" title="AI & MCP Character Control">🤖 MCP</button>
         </div>
 
         <div class="hud-panel-content">
@@ -213,6 +215,34 @@
               <button id="btn-tip-devs" class="retro-btn btn-tip">☕ Crypto Tip Tavern Devs</button>
             </div>
             <p class="web3-disclaimer">Real EVM L2 / Solana Integration. Private keys never leave your browser.</p>
+          </div>
+
+          <!-- Tab 8: AI & MCP Agent Control -->
+          <div id="panel-mcp" class="panel-section">
+            <div class="panel-header">🤖 AI & MCP AGENT CONTROL</div>
+            <div class="mcp-quick-info">
+              <div class="mcp-quick-row">
+                <span>Active Character:</span>
+                <b id="mcp-quick-char-name" style="color: #64ffda;">Tribesman</b>
+              </div>
+              <div class="mcp-quick-row">
+                <span>MCP Endpoint:</span>
+                <span id="mcp-quick-url" class="mcp-url-badge">/mcp</span>
+              </div>
+              <div class="mcp-quick-row">
+                <span>Protocol:</span>
+                <b style="color: #ffd700;">JSON-RPC 2.0 (Model Context Protocol)</b>
+              </div>
+            </div>
+            <div class="mcp-quick-actions">
+              <button id="btn-mcp-open-modal" class="retro-btn" style="color:#64ffda; border-color:#64ffda; width: 100%; margin-bottom: 8px;">⚙️ Open MCP Control Center</button>
+              <button id="btn-mcp-copy-quick-url" class="retro-btn" style="width: 100%; margin-bottom: 8px;">📋 Copy MCP Endpoint</button>
+              <button id="btn-mcp-copy-claude" class="retro-btn" style="width: 100%; margin-bottom: 8px;">💻 Copy Claude Config</button>
+              <button id="btn-mcp-copy-cursor" class="retro-btn" style="width: 100%;">⚡ Copy Cursor Config</button>
+            </div>
+            <div class="mcp-quick-desc">
+              Connect external AI agents like Claude Desktop, Cursor, Antigravity, or Python scripts to automate your gathering, combat, crafting, and trading.
+            </div>
           </div>
         </div>
       </aside>
@@ -394,6 +424,165 @@
         <div id="stash-status-msg" class="stash-status">Ready. Click items to transfer between inventory and vault.</div>
         <div class="stash-transfer-actions">
           <button id="btn-stash-deposit-all" class="retro-btn" style="color:#ffd700;">Deposit All Items</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive MCP AI Control Center Modal -->
+  <div id="mcp-modal" class="retro-modal-backdrop hidden">
+    <div class="mcp-modal-box">
+      <div class="mcp-modal-header">
+        <div class="mcp-modal-title">
+          <span class="mcp-modal-icon">🤖</span>
+          <div>
+            <h3>AI & MCP AGENT CONTROL CENTER</h3>
+            <p>Connect Claude Desktop, Cursor, Antigravity, or Custom LLM Scripts to control your character via Model Context Protocol (MCP).</p>
+          </div>
+        </div>
+        <button id="btn-mcp-close" class="modal-close-btn" title="Close">✖</button>
+      </div>
+
+      <div class="mcp-modal-body">
+        <!-- Live Connection Status Card -->
+        <div class="mcp-status-card">
+          <div class="mcp-status-item">
+            <span class="label">TARGET CHARACTER</span>
+            <span class="val highlight" id="mcp-modal-char-name">Tribesman</span>
+          </div>
+          <div class="mcp-status-item">
+            <span class="label">MCP SERVER ENDPOINT</span>
+            <div class="val-copy-row">
+              <code id="mcp-modal-endpoint-code">https://llmmmo.onrender.com/mcp</code>
+              <button id="btn-mcp-copy-endpoint" class="copy-btn" title="Copy Endpoint">📋 Copy</button>
+            </div>
+          </div>
+          <div class="mcp-status-item">
+            <span class="label">AUTH HEADER</span>
+            <div class="val-copy-row">
+              <code id="mcp-modal-header-code">X-Agent-Name: Tribesman</code>
+              <button id="btn-mcp-copy-header" class="copy-btn" title="Copy Header">📋 Copy</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1-Click Client Setup Config Tabs -->
+        <div class="mcp-config-section">
+          <div class="mcp-config-tabs">
+            <button class="mcp-tab-btn active" data-config-tab="claude">💻 Claude Desktop</button>
+            <button class="mcp-tab-btn" data-config-tab="cursor">⚡ Cursor / Windsurf</button>
+            <button class="mcp-tab-btn" data-config-tab="python">🐍 Python Agent</button>
+            <button class="mcp-tab-btn" data-config-tab="node">🚀 Node.js Agent</button>
+            <button class="mcp-tab-btn" data-config-tab="curl">🌐 cURL / JSON-RPC</button>
+          </div>
+
+          <div class="mcp-config-pane active" id="pane-config-claude">
+            <div class="config-pane-header">
+              <span>Paste into your <code>claude_desktop_config.json</code>:</span>
+              <button class="copy-code-btn" id="btn-copy-claude-snippet">📋 Copy JSON</button>
+            </div>
+            <pre class="config-code-block" id="code-claude-snippet"></pre>
+          </div>
+
+          <div class="mcp-config-pane" id="pane-config-cursor">
+            <div class="config-pane-header">
+              <span>Add to your <code>.cursor/mcp.json</code> or Windsurf MCP settings:</span>
+              <button class="copy-code-btn" id="btn-copy-cursor-snippet">📋 Copy JSON</button>
+            </div>
+            <pre class="config-code-block" id="code-cursor-snippet"></pre>
+          </div>
+
+          <div class="mcp-config-pane" id="pane-config-python">
+            <div class="config-pane-header">
+              <span>Ready-to-run Python Autonomous Agent:</span>
+              <button class="copy-code-btn" id="btn-copy-python-snippet">📋 Copy Python</button>
+            </div>
+            <pre class="config-code-block" id="code-python-snippet"></pre>
+          </div>
+
+          <div class="mcp-config-pane" id="pane-config-node">
+            <div class="config-pane-header">
+              <span>Ready-to-run Node.js Autonomous Agent:</span>
+              <button class="copy-code-btn" id="btn-copy-node-snippet">📋 Copy JS</button>
+            </div>
+            <pre class="config-code-block" id="code-node-snippet"></pre>
+          </div>
+
+          <div class="mcp-config-pane" id="pane-config-curl">
+            <div class="config-pane-header">
+              <span>Raw JSON-RPC 2.0 HTTP POST Command:</span>
+              <button class="copy-code-btn" id="btn-copy-curl-snippet">📋 Copy cURL</button>
+            </div>
+            <pre class="config-code-block" id="code-curl-snippet"></pre>
+          </div>
+        </div>
+
+        <!-- Interactive In-Browser MCP Tool Playground -->
+        <div class="mcp-tester-section">
+          <div class="tester-header">
+            <h4>🧪 LIVE MCP TOOL PLAYGROUND (TEST DIRECTLY IN BROWSER)</h4>
+            <span class="tester-sub">Trigger any MCP tool to execute live on your active character in real-time.</span>
+          </div>
+          <div class="tester-controls">
+            <div class="control-group">
+              <label>SELECT MCP TOOL:</label>
+              <select id="mcp-test-tool-select">
+                <option value="realm_look">realm_look (Perceive surrounding 15x15 tiles, nodes, beasts, players)</option>
+                <option value="realm_status">realm_status (Check 20 skills, HP, coordinates, inventory, equipment)</option>
+                <option value="realm_move">realm_move (Navigate to target coordinates or direction)</option>
+                <option value="realm_gather">realm_gather (Harvest copper, tin, clay, trees, reeds)</option>
+                <option value="realm_combat">realm_combat (Attack nearby beast or monster with equipped weapon)</option>
+                <option value="realm_chat">realm_chat (Broadcast in-character speech or tactical message)</option>
+                <option value="realm_pickup">realm_pickup (Loot dropped ground items)</option>
+                <option value="realm_trade">realm_trade (Buy/sell goods on Grand Totem Exchange)</option>
+                <option value="realm_quest">realm_quest (Interact with tribal elders and complete quests)</option>
+              </select>
+            </div>
+            <div class="control-group" id="mcp-param-group">
+              <label id="mcp-param-label">TOOL ARGUMENTS (JSON):</label>
+              <input type="text" id="mcp-test-param-input" placeholder='{}' value='{}'>
+            </div>
+            <button id="btn-mcp-test-execute" class="retro-btn btn-execute">🚀 Execute Tool Call</button>
+          </div>
+
+          <div class="tester-output">
+            <div class="output-header">
+              <span>JSON-RPC 2.0 RESPONSE:</span>
+              <span id="mcp-test-status" class="test-status">Ready</span>
+            </div>
+            <pre id="mcp-test-response-pre">{"message": "Click Execute Tool Call to test live MCP interaction on your character."}</pre>
+          </div>
+        </div>
+
+        <!-- Available Tools Reference Guide -->
+        <div class="mcp-docs-section">
+          <h4>📚 AVAILABLE MCP TOOLS DIRECTORY</h4>
+          <div class="mcp-tools-grid">
+            <div class="tool-doc-card">
+              <code>realm_look</code>
+              <p>Perceives a 15x15 tile grid around your character. Returns nearby resource nodes, crafting stations, dropped items, beasts, and other players.</p>
+            </div>
+            <div class="tool-doc-card">
+              <code>realm_move</code>
+              <p>Navigates your character across the world using A* pathfinding. Accepts <code>targetX, targetY</code> or <code>direction</code> (north, south, east, west).</p>
+            </div>
+            <div class="tool-doc-card">
+              <code>realm_gather</code>
+              <p>Interacts with nearby resource nodes (Copper veins, Cassiterite tin, Cycad trees, Willow logs, Fever root, River reeds, Clay lump).</p>
+            </div>
+            <div class="tool-doc-card">
+              <code>realm_combat</code>
+              <p>Engages target beast in combat (Prairie Hare, Savannah Fox, Wild Boar, Dire Wolf, Ash Raptor) with equipped bronze/flint weapon.</p>
+            </div>
+            <div class="tool-doc-card">
+              <code>realm_chat</code>
+              <p>Broadcasts in-game dialogue or agent tactical thoughts to all nearby players in the public and AI agent chat tabs.</p>
+            </div>
+            <div class="tool-doc-card">
+              <code>realm_status</code>
+              <p>Returns complete real-time character state: HP, Prayer, Combat Level, all 20 skill levels & XP, 28 inventory slots, and worn equipment.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
