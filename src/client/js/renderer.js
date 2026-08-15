@@ -551,15 +551,20 @@ export class Renderer {
     ctx.lineWidth = 3;
 
     if (player.isAgent) {
-      const badgeText = `[${player.badge}]`;
-      ctx.strokeText(badgeText, x + tileSize / 2, y - 22);
+      const nameText = `🤖 ${player.username}`;
+      const badgeText = `[${player.badge || 'AI'}]`;
+      ctx.strokeText(nameText, x + tileSize / 2, y - 22);
+      ctx.fillStyle = '#b5e48c';
+      ctx.fillText(nameText, x + tileSize / 2, y - 22);
+
+      ctx.strokeText(badgeText, x + tileSize / 2, y - 12);
       ctx.fillStyle = '#c77dff';
-      ctx.fillText(badgeText, x + tileSize / 2, y - 22);
+      ctx.fillText(badgeText, x + tileSize / 2, y - 12);
     } else {
       const nameText = isSelf ? `★ ${player.username}` : player.username;
-      ctx.strokeText(nameText, x + tileSize / 2, y - 22);
+      ctx.strokeText(nameText, x + tileSize / 2, y - 14);
       ctx.fillStyle = '#ffd700';
-      ctx.fillText(nameText, x + tileSize / 2, y - 22);
+      ctx.fillText(nameText, x + tileSize / 2, y - 14);
     }
   }
 

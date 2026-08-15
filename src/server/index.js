@@ -40,7 +40,7 @@ const rateLimiter = new RateLimiter({ maxTokens: 50, refillRate: 20 });
 const openrouterSwarm = new OpenRouterSwarm(tickManager, mcpServer, process.env.OPENROUTER_API_KEY || '');
 
 // Start OpenRouter Swarm by default to populate the prehistoric world with autonomous LLM players
-// openrouterSwarm.start();
+openrouterSwarm.start();
 
 // Periodic Auto-Save for All Active Players (Every 60s)
 setInterval(() => {
