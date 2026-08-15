@@ -18,5 +18,7 @@ scratch/
 .tempmediaStorage/
 *.log
 
-# Persistent Account Data (optional: remove if you want fresh accounts per deployment)
+# Persistent Account & Telemetry Data
 # data/accounts.json
+data/*.jsonl
+data/exported_traces_ledger.json
