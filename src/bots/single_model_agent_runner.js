@@ -10,6 +10,7 @@ import fs from 'fs';
 import { ModelEvaluator } from '../server/telemetry/modelEvaluator.js';
 import { TraceRecorder } from '../server/telemetry/traceRecorder.js';
 import { HuggingFaceExporter } from '../server/telemetry/huggingfaceExporter.js';
+import { GitTraceExporter } from '../server/telemetry/gitTraceExporter.js';
 
 const CLOUD_WS = process.env.CLOUD_WS || 'wss://llmmmo.onrender.com';
 const MODEL_ID = process.env.AGENT_MODEL || 'poolside/laguna-s-2.1:free';
@@ -31,6 +32,7 @@ console.log('========================================================\n');
 export const evaluator = new ModelEvaluator();
 export const recorder = new TraceRecorder();
 export const exporter = new HuggingFaceExporter();
+export const gitExporter = new GitTraceExporter();
 
 function cleanThought(text) {
   if (!text) return '';
@@ -127,6 +129,14 @@ class DedicatedSingleModelAgent {
         }
       }
     }, 120000);
+
+    // Auto-sync deduplicated traces to Git dataset every 1 minute
+    setInterval(async () => {
+      const res = await gitExporter.exportAndCommitToGit({ autoPush: false });
+      if (res.newTracesCount > 0) {
+        console.log(`[Git Dataset Sync] Appended ${res.newTracesCount} new deduplicated CoT traces (Total Dataset: ${res.totalDatasetSize})`);
+      }
+    }, 60000);
   }
 
   connect() {

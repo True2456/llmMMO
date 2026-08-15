@@ -10,6 +10,7 @@ import path from 'path';
 import { ModelEvaluator } from '../src/server/telemetry/modelEvaluator.js';
 import { TraceRecorder } from '../src/server/telemetry/traceRecorder.js';
 import { HuggingFaceExporter } from '../src/server/telemetry/huggingfaceExporter.js';
+import { GitTraceExporter } from '../src/server/telemetry/gitTraceExporter.js';
 
 const TEST_DIR = path.resolve('test/temp_telemetry');
 const TEST_TRACES = path.join(TEST_DIR, 'test_traces.jsonl');
@@ -127,7 +128,32 @@ test('3. HuggingFaceExporter deduplicates traces and enforces ledger watermarks'
   const res3 = await exporter.exportBatch({ dryRun: true });
   assert.strictEqual(res3.exportedCount, 1, 'Only newly added trace was exported');
   assert.strictEqual(res3.totalExportedSoFar, 3, 'Ledger updated to 3');
+});
 
-  // Clean up test artifacts
+test('4. GitTraceExporter deduplicates and appends traces into Git dataset', async () => {
+  const TEST_GIT_TRACES = path.join(TEST_DIR, 'git_dataset.jsonl');
+  const TEST_GIT_LEDGER = path.join(TEST_DIR, 'git_ledger.json');
+
+  const gitExporter = new GitTraceExporter({
+    tracesFile: TEST_TRACES,
+    repoTracesFile: TEST_GIT_TRACES,
+    ledgerFile: TEST_GIT_LEDGER
+  });
+
+  const uncommitted = gitExporter.getUncommittedTraces();
+  assert.strictEqual(uncommitted.length, 3, '3 uncommitted traces found');
+
+  const res1 = await gitExporter.exportAndCommitToGit({ dryRun: true });
+  assert.strictEqual(res1.success, true);
+  assert.strictEqual(res1.newTracesCount, 3, 'Appended 3 traces to Git dataset');
+  assert.strictEqual(res1.totalDatasetSize, 3);
+
+  // Subsequent export has 0 new traces
+  const res2 = await gitExporter.exportAndCommitToGit({ dryRun: true });
+  assert.strictEqual(res2.success, true);
+  assert.strictEqual(res2.newTracesCount, 0, 'Zero duplicate traces added on 2nd export');
+
+  // Clean up
   if (fs.existsSync(TEST_DIR)) fs.rmSync(TEST_DIR, { recursive: true });
 });
+
