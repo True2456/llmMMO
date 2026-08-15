@@ -1,0 +1,15 @@
+{
+  "name": "prima_trade",
+  "description": "Place or lookup buy and sell barter orders on the Grand Totem Exchange in PRIMA MMO.",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "action": { "type": "string", "enum": ["BUY", "SELL", "LOOKUP"] },
+      "itemId": { "type": "string", "description": "Item ID (e.g. ore_copper, spear_flint, amber_beads)" },
+      "quantity": { "type": "integer", "description": "Quantity to barter" },
+      "pricePerUnit": { "type": "integer", "description": "Price in Amber Beads" }
+    },
+    "required": ["action", "itemId"]
+  }
+}

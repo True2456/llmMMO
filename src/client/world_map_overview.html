@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>PRIMA: Age of Bronze — Continent of the Ancients (World Map Overview)</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Press+Start+2P&family=VT323&display=swap');
+    
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #050608;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1560px;
+      height: 1240px;
+      font-family: 'Press Start 2P', monospace;
+      color: #dfd5b5;
+    }
+    #map-frame {
+      width: 1520px;
+      height: 1200px;
+      border: 4px solid #b8860b;
+      box-shadow: 0 0 50px rgba(0,0,0,0.95), inset 0 0 35px #181103;
+      background: #090b10;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    #map-header {
+      background: linear-gradient(180deg, #2c1e08 0%, #120d04 100%);
+      border-bottom: 3px solid #b8860b;
+      padding: 14px 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #map-header h1 {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #ffd700;
+      text-shadow: 2px 2px 5px #000;
+      letter-spacing: 3px;
+    }
+    #map-header .subtitle {
+      font-family: 'VT323', monospace;
+      font-size: 20px;
+      color: #bfae8b;
+      margin-top: 3px;
+    }
+    #canvas-container {
+      flex: 1;
+      position: relative;
+      background: #08090f;
+    }
+    canvas {
+      width: 100%;
+      height: 100%;
+      image-rendering: pixelated;
+    }
+    #map-legend {
+      position: absolute;
+      bottom: 24px;
+      left: 24px;
+      background: rgba(10, 12, 18, 0.96);
+      border: 2px solid #b8860b;
+      padding: 14px 18px;
+      border-radius: 6px;
+      font-size: 8px;
+      line-height: 1.8;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.95);
+      width: 440px;
+    }
+    .legend-title {
+      font-size: 10px;
+      color: #ffd700;
+      border-bottom: 1px solid #b8860b;
+      padding-bottom: 5px;
+      margin-bottom: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .legend-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4px 12px;
+      color: #eee;
+    }
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      white-space: nowrap;
+    }
+    .legend-box {
+      width: 13px;
+      height: 13px;
+      border: 1px solid #111;
+      border-radius: 2px;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+    #compass-rose {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      width: 106px;
+      height: 106px;
+      border: 3px solid #b8860b;
+      border-radius: 50%;
+      background: radial-gradient(circle, #2a1e0b 0%, #0d0f16 85%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+      color: #ffd700;
+      box-shadow: 0 0 30px rgba(0,0,0,0.95);
+    }
+    #compass-rose .north { font-size: 17px; font-weight: bold; color: #e63946; text-shadow: 0 0 8px #e63946; }
+    
+    #offshore-callout {
+      position: absolute;
+      top: 110px;
+      right: 110px;
+      background: rgba(18, 12, 32, 0.95);
+      border: 2px solid #9d4edd;
+      padding: 8px 12px;
+      border-radius: 6px;
+      color: #e0aaff;
+      font-size: 7.5px;
+      box-shadow: 0 0 20px rgba(157, 78, 221, 0.5);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="map-frame">
+    <div id="map-header">
+      <div>
+        <h1>PRIMA: CONTINENT OF THE ANCIENTS</h1>
+        <div class="subtitle">200x200 Vast Prehistoric Archipelago • 6 Biomes • Main Continent & Offshore Isle</div>
+      </div>
+      <div>
+        <span style="font-size: 9px; color: #e9c46a; background: #1c1507; padding: 8px 14px; border: 1px solid #b8860b; border-radius: 4px;">
+          👑 6 METROPOLISES • 🏕️ 10 TOWNS • ⚔️ 12 DUNGEONS
+        </span>
+      </div>
+    </div>
+    <div id="canvas-container">
+      <canvas id="map-canvas" width="1520" height="1100"></canvas>
+
+      <div id="offshore-callout">
+        <b>✨ STARFALL SANCTUARY ISLE</b><br>
+        <span style="font-family: 'VT323'; font-size: 14px; color: #dfd5b5;">Offshore Meteorite Archipelago</span>
+      </div>
+      
+      <div id="map-legend">
+        <div class="legend-title">
+          <span>🗺️ REALM BIOMES & REGIONS</span>
+          <span style="color: #aaa; font-size: 8px;">200 x 200 TILES</span>
+        </div>
+        <div class="legend-grid">
+          <div class="legend-row"><span class="legend-box" style="background: #e2eff5; border: 1px solid #a8dadc;"></span> ❄️ Frost Tundra</div>
+          <div class="legend-row"><span class="legend-box" style="background: #1b4332; border: 1px solid #05668d;"></span> 🌿 Cycad Rainforest</div>
+          <div class="legend-row"><span class="legend-box" style="background: #dd9b42; border: 1px solid #9e2a2b;"></span> 🐪 Barter Oasis Dunes</div>
+          <div class="legend-row"><span class="legend-box" style="background: #8c6239; border: 1px solid #582f0e;"></span> 🌾 Savannah Clay</div>
+          <div class="legend-row"><span class="legend-box" style="background: #4a3e56; border: 1px solid #352244;"></span> ✨ Starfall / Crypts</div>
+          <div class="legend-row"><span class="legend-box" style="background: #2b2d42; border: 1px solid #d90429;"></span> 🔥 Obsidian Crags</div>
+          <div class="legend-row"><span class="legend-box" style="background: #e9c46a; border: 1px solid #f4a261;"></span> 🏖️ Coastal Beach</div>
+          <div class="legend-row"><span class="legend-box" style="background: #495057; border: 1px solid #dee2e6;"></span> 🏔️ Mountain Peaks</div>
+          <div class="legend-row"><span class="legend-box" style="background: #10457a; border: 1px solid #2980b9;"></span> 🌊 Deep Ocean & River</div>
+          <div class="legend-row"><span class="legend-box" style="background: #c1121f; border: 1px solid #ffb703;"></span> 🌋 Molten Lava Fissure</div>
+        </div>
+        <div style="margin-top: 6px; font-size: 7.5px; color: #ffd700; border-top: 1px solid #333; padding-top: 5px; display: flex; justify-content: space-between;">
+          <span>👑 Metropolis</span>
+          <span>🏕️ Frontier Town</span>
+          <span style="color: #ff4d6d;">⚔️ Dungeon</span>
+          <span style="color: #64dfdf;">🌉 Stone Ford</span>
+        </div>
+      </div>
+
+      <div id="compass-rose">
+        <div class="north">N</div>
+        <div style="font-size: 9px; color: #8d99ae; margin: 3px 0;">W &nbsp;+&nbsp; E</div>
+        <div style="font-size: 10px; color: #ffd700;">S</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+    import { World, CITIES, TOWNS, BIOMES } from './server/engine/world.js';
+    import { DUNGEON_DEFINITIONS } from './server/engine/dungeons.js';
+
+    const canvas = document.getElementById('map-canvas');
+    const ctx = canvas.getContext('2d');
+
+    const world = new World(200, 200);
+    const WORLD_W = world.width;
+    const WORLD_H = world.height;
+    const scaleX = canvas.width / WORLD_W;
+    const scaleY = canvas.height / WORLD_H;
+
+    // 16-Bit Tile Colors
+    const TILE_COLORS = {
+      0: '#8c6239',  // Savannah Clay Ground
+      1: '#738e4a',  // Steppe Grass
+      2: '#2b2d42',  // Obsidian Basalt
+      3: '#10457a',  // Deep Ocean & River
+      4: '#e2eff5',  // Glacial Ice / Snow
+      5: '#c1121f',  // Molten Lava
+      6: '#1b4332',  // Dense Rainforest
+      7: '#4a3e56',  // Sunken Megalith / Starfall Ground
+      8: '#dd9b42',  // Desert Dunes Sand
+      9: '#e9c46a',  // Sandy Beach Coastline
+      10: '#495057', // High Mountain Peak
+      11: '#adb5bd'  // Stone Ford / Bridge
+    };
+
+    // 1. Render All Tiles from World
+    for (let y = 0; y < WORLD_H; y++) {
+      for (let x = 0; x < WORLD_W; x++) {
+        const tile = world.tiles[y * WORLD_W + x];
+        ctx.fillStyle = TILE_COLORS[tile] || '#000';
+        ctx.fillRect(x * scaleX, y * scaleY, scaleX + 0.5, scaleY + 0.5);
+
+        // Procedural Texturing
+        if (tile === 3) {
+          // Animated wave speck
+          if ((x * 3 + y * 7) % 19 === 0) {
+            ctx.fillStyle = 'rgba(255,255,255,0.2)';
+            ctx.fillRect(x * scaleX, y * scaleY, scaleX * 1.6, scaleY * 0.8);
+          }
+        } else if (tile === 10) {
+          // Snowcapped peak
+          ctx.fillStyle = '#ffffff';
+          ctx.fillRect(x * scaleX + scaleX * 0.25, y * scaleY, scaleX * 0.5, scaleY * 0.35);
+        } else if (tile === 5) {
+          // Glowing yellow magma core
+          ctx.fillStyle = '#ffb703';
+          ctx.fillRect(x * scaleX + scaleX * 0.2, y * scaleY + scaleY * 0.2, scaleX * 0.6, scaleY * 0.6);
+        }
+      }
+    }
+
+    // 2. High-Contrast Badge Renderer
+    function drawBadge(text, sub, x, y, icon, color = '#ffd700', isLarge = false) {
+      ctx.save();
+      ctx.font = isLarge ? 'bold 8.5px "Press Start 2P"' : '6.5px "Press Start 2P"';
+      const tw = ctx.measureText(text).width;
+      const subWidth = sub ? sub.length * 6.5 : 0;
+      const bw = Math.max(tw + (icon ? 26 : 14), subWidth + 14);
+      const bh = isLarge ? (sub ? 34 : 22) : (sub ? 26 : 16);
+
+      ctx.shadowColor = 'rgba(0, 0, 0, 0.95)';
+      ctx.shadowBlur = 10;
+      ctx.fillStyle = 'rgba(10, 12, 18, 0.95)';
+      ctx.strokeStyle = color;
+      ctx.lineWidth = isLarge ? 2 : 1.2;
+      ctx.fillRect(x - bw / 2, y - bh / 2, bw, bh);
+      ctx.strokeRect(x - bw / 2, y - bh / 2, bw, bh);
+      ctx.shadowBlur = 0;
+
+      ctx.textAlign = 'center';
+      ctx.fillStyle = color;
+      const label = icon ? `${icon} ${text}` : text;
+      ctx.fillText(label, x, y - (sub ? (isLarge ? 4 : 2) : -2.5));
+
+      if (sub) {
+        ctx.font = '11px "VT323"';
+        ctx.fillStyle = '#fdf0d5';
+        ctx.fillText(sub, x, y + (isLarge ? 11 : 8));
+      }
+      ctx.restore();
+    }
+
+    // 3. Draw 6 Grand Metropolis Cities
+    CITIES.forEach(c => {
+      const px = c.x * scaleX;
+      const py = c.y * scaleY;
+
+      // Territorial Glow
+      const grad = ctx.createRadialGradient(px, py, 4, px, py, 35);
+      grad.addColorStop(0, 'rgba(255, 215, 0, 0.4)');
+      grad.addColorStop(1, 'rgba(255, 215, 0, 0)');
+      ctx.fillStyle = grad;
+      ctx.beginPath();
+      ctx.arc(px, py, 35, 0, Math.PI * 2);
+      ctx.fill();
+
+      let icon = '👑';
+      if (c.id.includes('ash')) icon = '🔥';
+      if (c.id.includes('sol')) icon = '☀️';
+      if (c.id.includes('oasis')) icon = '🐪';
+      if (c.id.includes('skadi')) icon = '🦣';
+      if (c.id.includes('rain')) icon = '🌳';
+
+      drawBadge(c.name.toUpperCase(), `[City] (${c.x}, ${c.y})`, px, py, icon, '#ffd700', true);
+    });
+
+    // 4. Draw 10 Frontier Towns
+    TOWNS.forEach(t => {
+      const px = t.x * scaleX;
+      const py = t.y * scaleY;
+      // Slight vertical offsets to avoid overlapping city badges
+      let offsetY = (t.y % 2 === 0) ? -16 : 16;
+      if (t.id === 'town_starfall_crater') offsetY = -18;
+      drawBadge(t.name, `(${t.x}, ${t.y})`, px, py + offsetY, '🏕️', '#ffb703', false);
+    });
+
+    // 5. Draw 12 Dungeons
+    const dungeonPositions = {
+      dungeon_01_runestone_crypts: { ox: 15, oy: 22 },
+      dungeon_02_obsidian_magma: { ox: 20, oy: 22 },
+      dungeon_03_frozen_mammoth: { ox: -25, oy: -20 },
+      dungeon_04_raptor_catacombs: { ox: -30, oy: -15 },
+      dungeon_05_starfall_core: { ox: 25, oy: -20 },
+      dungeon_06_river_abyss: { ox: -20, oy: -18 },
+      dungeon_07_stone_colossus: { ox: 30, oy: 15 },
+      dungeon_08_basilisk_mines: { ox: -25, oy: 20 },
+      dungeon_09_first_shaman_tomb: { ox: -25, oy: 18 },
+      dungeon_10_fire_drake_caverns: { ox: 25, oy: 22 },
+      dungeon_11_cursed_megalith: { ox: 20, oy: -20 },
+      dungeon_12_void_sanctum: { ox: 25, oy: 22 }
+    };
+
+    Object.values(DUNGEON_DEFINITIONS).forEach((d, i) => {
+      const px = d.entrance.x * scaleX;
+      const py = d.entrance.y * scaleY;
+      const offset = dungeonPositions[d.id] || { ox: 0, oy: 0 };
+      const isEndgame = d.id.includes('12');
+      const shortName = `D${i+1}: ${d.name.replace('The ', '')}`;
+      drawBadge(shortName, d.recLevel, px + offset.ox, py + offset.oy, '⚔️', isEndgame ? '#c77dff' : '#ff4d6d', false);
+    });
+
+    // 6. Regional Biome Headers
+    const BIOMES_REGION = [
+      { text: '❄️ MAMMOTH STEPPES & FROST TUNDRA', x: 80, y: 14 },
+      { text: '🌿 PRIMEVAL CYCAD RAINFOREST', x: 34, y: 68 },
+      { text: '🐪 BARTER OASIS & GRAND DUNES', x: 100, y: 66 },
+      { text: '✨ SUNKEN MEGALITH CRYPTS', x: 144, y: 22 },
+      { text: '🔥 OBSIDIAN CRAGS & VOLCANIC RIFTS', x: 160, y: 105 },
+      { text: '🌾 SAVANNAH & CLAY ENCAMPMENT', x: 100, y: 162 }
+    ];
+
+    BIOMES_REGION.forEach(b => {
+      const px = b.x * scaleX;
+      const py = b.y * scaleY;
+      ctx.save();
+      ctx.font = 'bold 9.5px "Press Start 2P"';
+      ctx.textAlign = 'center';
+      ctx.fillStyle = 'rgba(10, 12, 18, 0.94)';
+      const bw = ctx.measureText(b.text).width + 20;
+      ctx.fillRect(px - bw / 2, py - 11, bw, 22);
+      ctx.strokeStyle = '#dfd5b5';
+      ctx.lineWidth = 1.2;
+      ctx.strokeRect(px - bw / 2, py - 11, bw, 22);
+
+      ctx.fillStyle = '#ffffff';
+      ctx.fillText(b.text, px, py + 3);
+      ctx.restore();
+    });
+  </script>
+</body>
+</html>

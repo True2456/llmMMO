@@ -1,0 +1,22 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Temporary & Chrome test profiles
+scratch/
+.tempmediaStorage/
+*.log
+
+# Persistent Account Data (optional: remove if you want fresh accounts per deployment)
+# data/accounts.json

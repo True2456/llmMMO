@@ -1,0 +1,20 @@
+{
+  "name": "prima_quest",
+  "description": "Inspect your active quest log, start available quests (30 quests), or check quest objectives and rewards in PRIMA MMO.",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "action": {
+        "type": "string",
+        "enum": ["LIST", "START", "PROGRESS", "INSPECT"],
+        "description": "Quest action"
+      },
+      "questId": {
+        "type": "string",
+        "description": "Quest ID (e.g. quest_01_first_flame, quest_07_smelters_first_ingot, quest_22_wrath_mammoth_king)"
+      }
+    },
+    "required": ["action"]
+  }
+}

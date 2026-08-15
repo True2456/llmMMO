@@ -1,0 +1,17 @@
+{
+  "name": "prima_move",
+  "description": "Navigate your tribesman character to (x, y) coordinates or named landmarks (ASH_RIVER_CAMP, OBSIDIAN_CRAGS, MAMMOTH_STEPPES).",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "x": { "type": "integer", "description": "Target X coordinate" },
+      "y": { "type": "integer", "description": "Target Y coordinate" },
+      "landmark": {
+        "type": "string",
+        "enum": ["LUMBRIDGE_MINE", "VARROCK_EXCHANGE", "DRAYNOR_CRYPTS", "OBSIDIAN_VOLCANO", "LUMBRIDGE_SPAWN"],
+        "description": "Named destination"
+      }
+    }
+  }
+}

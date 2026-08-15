@@ -1,0 +1,9 @@
+{
+  "name": "prima_status",
+  "description": "Inspect your full character status: 28-slot inventory, equipped gear, 10 Bronze Age skills, and HP/Spirit.",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {}
+  }
+}

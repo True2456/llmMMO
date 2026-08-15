@@ -1,0 +1,12 @@
+{
+  "name": "prima_gather",
+  "description": "Mine native copper/tin/obsidian boulders, chop ancient cycad palms, or forage river reeds in PRIMA MMO.",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "nodeId": { "type": "string", "description": "The ID of the target resource node from prima_look" }
+    },
+    "required": ["nodeId"]
+  }
+}

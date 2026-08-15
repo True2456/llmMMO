@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>PRIMA: Age of Bronze | Prehistoric & Bronze Age Retro MMO for Humans & AI Agents</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="game-app">
+    <!-- Top Navigation & Status Bar -->
+    <header id="top-bar">
+      <div class="brand">
+        <span class="realm-icon">🦣</span>
+        <span class="realm-title">PRIMA</span>
+        <span class="version-tag">AGE OF BRONZE</span>
+      </div>
+
+      <div class="player-quick-stats">
+        <div class="stat-pill hp-pill">
+          <span class="stat-icon">❤️</span>
+          <span id="stat-hp-text">10 / 10</span>
+          <div class="bar-fill" id="stat-hp-bar" style="width: 100%;"></div>
+        </div>
+        <div class="stat-pill prayer-pill">
+          <span class="stat-icon">✨</span>
+          <span id="stat-prayer-text">10 / 10</span>
+          <div class="bar-fill" id="stat-prayer-bar" style="width: 100%;"></div>
+        </div>
+        <div class="stat-pill combat-pill">
+          <span class="stat-icon">⚔️</span>
+          <span>CB: <b id="stat-combat-lvl">3</b></span>
+        </div>
+        <div class="stat-pill location-pill">
+          <span class="stat-icon">📍</span>
+          <span id="stat-location-name">Lumbridge Crossroads</span>
+        </div>
+      </div>
+
+      <div class="top-actions">
+        <a href="/sprites_viewer.html" target="_blank" id="btn-sprites-inspector" class="retro-btn" title="Inspect all individual sprite assets directly" style="text-decoration:none; display:inline-flex; align-items:center; color:#ffd700;">🎨 Sprites Atlas</a>
+        <button id="btn-audio-toggle" class="retro-btn" title="Toggle Sound FX">🔊 Sound: ON</button>
+        <button id="btn-web3-connect" class="retro-btn btn-web3">🦊 Connect Web3</button>
+      </div>
+    </header>
+
+    <!-- Main Game Container -->
+    <main id="main-content">
+      <!-- Left / Center: Game Canvas & Viewport -->
+      <div id="viewport-container">
+        <canvas id="game-canvas" width="800" height="520"></canvas>
+        
+        <!-- Level Up Notification Banner -->
+        <div id="level-up-banner" class="hidden">
+          <div class="banner-inner">
+            <h3>🎉 CONGRATULATIONS! 🎉</h3>
+            <p id="level-up-text">You just advanced a Mining level! Your Mining level is now 15.</p>
+          </div>
+        </div>
+
+        <!-- Overhead Context Tooltip / Target Inspector -->
+        <div id="hover-tooltip" class="hidden"></div>
+
+        <!-- Right-Click Context Menu -->
+        <div id="context-menu" class="retro-context-menu hidden"></div>
+      </div>
+
+      <!-- Right: Retro HUD Tabbed Panels -->
+      <aside id="side-hud">
+        <div class="hud-tabs">
+          <button class="hud-tab active" data-tab="inventory" title="Inventory">🎒 Items</button>
+          <button class="hud-tab" data-tab="equipment" title="Equipment">🛡️ Worn</button>
+          <button class="hud-tab" data-tab="skills" title="20 Skills & 500 Unlocks">✨ Skills</button>
+          <button class="hud-tab" data-tab="quests" title="30 Quests Journal">📜 Quests</button>
+          <button class="hud-tab" data-tab="atlas" title="World Atlas & Dungeons">🗺️ Atlas</button>
+          <button class="hud-tab" data-tab="exchange" title="Grand Exchange">🏛️ Market</button>
+          <button class="hud-tab" data-tab="web3" title="Web3 & Crypto">💎 Web3</button>
+        </div>
+
+        <div class="hud-panel-content">
+          <!-- Tab 1: Inventory (28 Slots) -->
+          <div id="panel-inventory" class="panel-section active">
+            <div class="panel-header">
+              <span>INVENTORY (28 SLOTS)</span>
+              <span id="inv-coins">🟡 50 Amber</span>
+            </div>
+            <div class="inventory-grid" id="inventory-grid">
+              <!-- 28 Item Slots generated dynamically -->
+            </div>
+          </div>
+
+          <!-- Tab 2: Worn Equipment -->
+          <div id="panel-equipment" class="panel-section">
+            <div class="panel-header">WORN EQUIPMENT</div>
+            <div class="equipment-paperdoll">
+              <div class="equip-slot" id="equip-head" data-slot="head" title="Head">👑 Head</div>
+              <div class="equip-row">
+                <div class="equip-slot" id="equip-cape" data-slot="cape" title="Cape">🧣 Cape</div>
+                <div class="equip-slot" id="equip-neck" data-slot="neck" title="Amulet">📿 Neck</div>
+                <div class="equip-slot" id="equip-ammo" data-slot="ammo" title="Ammo">🏹 Ammo</div>
+              </div>
+              <div class="equip-row">
+                <div class="equip-slot" id="equip-weapon" data-slot="weapon" title="Weapon">🗡️ Weapon</div>
+                <div class="equip-slot" id="equip-body" data-slot="body" title="Body">🛡️ Body</div>
+                <div class="equip-slot" id="equip-shield" data-slot="shield" title="Shield">🛡️ Shield</div>
+              </div>
+              <div class="equip-slot" id="equip-legs" data-slot="legs" title="Legs">👖 Legs</div>
+              <div class="equip-row">
+                <div class="equip-slot" id="equip-hands" data-slot="hands" title="Gloves">🧤 Hands</div>
+                <div class="equip-slot" id="equip-feet" data-slot="feet" title="Boots">👢 Feet</div>
+                <div class="equip-slot" id="equip-ring" data-slot="ring" title="Ring">💍 Ring</div>
+              </div>
+            </div>
+            <div class="equip-stats-box">
+              <div>Attack Bonus: <b id="stat-att-bonus">+4</b></div>
+              <div>Strength Bonus: <b id="stat-str-bonus">+3</b></div>
+              <div>Defense Bonus: <b id="stat-def-bonus">+0</b></div>
+            </div>
+          </div>
+
+          <!-- Tab 3: 20 Skills & 10 Tiers -->
+          <div id="panel-skills" class="panel-section">
+            <div class="panel-header">20 BRONZE AGE SKILLS (1-50)</div>
+            <div class="skills-grid" id="skills-grid">
+              <!-- Dynamically populated 20 skills -->
+            </div>
+          </div>
+
+          <!-- Tab 4: 30 Quests Journal -->
+          <div id="panel-quests" class="panel-section">
+            <div class="panel-header">QUEST JOURNAL (30 QUESTS)</div>
+            <div class="quest-filter-bar">
+              <button class="quest-filter-btn active" data-filter="all">All</button>
+              <button class="quest-filter-btn" data-filter="novice">Novice</button>
+              <button class="quest-filter-btn" data-filter="adept">Adept</button>
+              <button class="quest-filter-btn" data-filter="master">Master</button>
+            </div>
+            <div class="quests-list" id="quests-list">
+              <!-- Dynamically populated 30 quests -->
+            </div>
+          </div>
+
+          <!-- Tab 5: World Atlas & Dungeons -->
+          <div id="panel-atlas" class="panel-section">
+            <div class="panel-header">WORLD ATLAS & DUNGEONS</div>
+            <div class="atlas-summary">
+              <div><b>6 Biomes</b> • <b>6 Grand Cities</b> • <b>10 Towns</b> • <b>12 Dungeons</b></div>
+            </div>
+            <div class="atlas-list" id="atlas-list">
+              <!-- Dynamically populated locations -->
+            </div>
+          </div>
+
+          <!-- Tab 6: Grand Realm Exchange -->
+          <div id="panel-exchange" class="panel-section">
+            <div class="panel-header">GRAND TOTEM EXCHANGE</div>
+            <div class="exchange-form">
+              <label>Select Item:</label>
+              <select id="ge-item-select">
+                <option value="ore_copper">Native Copper Ore</option>
+                <option value="ore_tin">Cassiterite Tin Ore</option>
+                <option value="ingot_bronze">Bronze Ingot</option>
+                <option value="spear_flint">Flint Spear</option>
+                <option value="axe_bronze">Cast Bronze Axe</option>
+                <option value="meat_cooked">Roasted Boar Meat</option>
+                <option value="glass_obsidian">Obsidian Glass Shard</option>
+                <option value="mammoth_tusk">Great Mammoth Tusk (NFT)</option>
+              </select>
+              <div class="form-row">
+                <div>
+                  <label>Qty:</label>
+                  <input type="number" id="ge-qty" value="1" min="1" max="1000">
+                </div>
+                <div>
+                  <label>Price (Amber):</label>
+                  <input type="number" id="ge-price" value="10" min="1" max="1000000">
+                </div>
+              </div>
+              <div class="exchange-btn-row">
+                <button id="btn-ge-buy" class="retro-btn btn-buy">Buy Order</button>
+                <button id="btn-ge-sell" class="retro-btn btn-sell">Sell Order</button>
+              </div>
+            </div>
+            <div class="ge-orderbook" id="ge-orderbook">
+              <div class="orderbook-title">Recent Realm Transactions</div>
+              <div id="ge-trade-history">Listing live orders...</div>
+            </div>
+          </div>
+
+          <!-- Tab 7: Real Web3 & Crypto Integration -->
+          <div id="panel-web3" class="panel-section">
+            <div class="panel-header">WEB3 & TOKEN BRIDGE</div>
+            <div class="web3-status-box">
+              <div class="web3-status-row">
+                <span>Network:</span>
+                <b id="web3-network-name">Base Sepolia (L2)</b>
+              </div>
+              <div class="web3-status-row">
+                <span>Wallet:</span>
+                <span id="web3-wallet-addr">Not Connected (Guest)</span>
+              </div>
+              <div class="web3-status-row">
+                <span>$PRIMA Balance:</span>
+                <b id="web3-gold-balance">0.00 PRIMA</b>
+              </div>
+            </div>
+            <div class="web3-actions">
+              <button id="btn-bridge-gold" class="retro-btn">🟡 Bridge Amber Beads On-Chain</button>
+              <button id="btn-mint-nft" class="retro-btn">✨ Mint Rare Drop NFT</button>
+              <button id="btn-tip-devs" class="retro-btn btn-tip">☕ Crypto Tip Tavern Devs</button>
+            </div>
+            <p class="web3-disclaimer">Real EVM L2 / Solana Integration. Private keys never leave your browser.</p>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- Bottom Bar: Multi-channel Chat & AdSense Tavern Billboard -->
+    <footer id="bottom-bar">
+      <!-- Chat Interface -->
+      <div id="chat-container">
+        <div class="chat-header">
+          <button class="chat-tab active" data-channel="all">All</button>
+          <button class="chat-tab" data-channel="public">Public</button>
+          <button class="chat-tab" data-channel="agents">🤖 AI Agents</button>
+          <button class="chat-tab" data-channel="system">System</button>
+        </div>
+        <div id="chat-messages">
+          <div class="chat-msg system"><span class="badge">[System]</span> Welcome to Aetheria: Classic Realms! Connect via Web browser or MCP AI Agent.</div>
+        </div>
+        <form id="chat-form">
+          <input type="text" id="chat-input" placeholder="Type a message or whisper to adventurers..." maxlength="140" autocomplete="off">
+          <button type="submit" class="retro-btn">Speak</button>
+        </form>
+      </div>
+
+      <!-- Google AdSense Billboard Slot (Styled as Retro Medieval Bounty Board) -->
+      <div id="adsense-billboard-container">
+        <div class="billboard-header">
+          <span>📜 TAVERN SPONSOR BULLETIN</span>
+          <span class="sponsored-tag">ADSENSE</span>
+        </div>
+        <div class="billboard-body">
+          <!-- Google AdSense Responsive Unit Placeholder -->
+          <div class="adsense-unit-mock" id="adsense-ad-slot">
+            <div class="ad-content-box">
+              <span class="ad-pixel-icon">🛡️</span>
+              <div class="ad-text-block">
+                <b>Upgrade Your Kingdom Arsenal!</b>
+                <p>Support free server hosting by visiting realm sponsors.</p>
+              </div>
+            </div>
+            <!-- Live AdSense script hook (uncomment with your Publisher ID) -->
+            <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="XXXXXXXXXX" data-ad-format="auto" data-full-width-responsive="true"></ins> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Account Registration & Login Modal -->
+  <div id="auth-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <span class="modal-icon">🦣</span>
+        <h2>PRIMA: AGE OF BRONZE</h2>
+        <p class="modal-sub">Sign in to save your 10 skills, inventory, and Amber Beads across sessions.</p>
+      </div>
+
+      <div class="modal-tabs">
+        <button id="modal-tab-login" class="modal-tab active">LOGIN</button>
+        <button id="modal-tab-register" class="modal-tab">REGISTER</button>
+      </div>
+
+      <!-- Login Form -->
+      <form id="form-login" class="auth-form active">
+        <div class="input-group">
+          <label>TRIBAL USERNAME</label>
+          <input type="text" id="login-username" placeholder="e.g. ShamanKael" required autocomplete="username">
+        </div>
+        <div class="input-group">
+          <label>SECRET PASSCODE</label>
+          <input type="password" id="login-password" placeholder="••••••••" required autocomplete="current-password">
+        </div>
+        <button type="submit" class="btn-action primary">ENTER REALM</button>
+      </form>
+
+      <!-- Register Form -->
+      <form id="form-register" class="auth-form">
+        <div class="input-group">
+          <label>CHOOSE USERNAME</label>
+          <input type="text" id="reg-username" placeholder="e.g. HunterUrk" required autocomplete="username">
+        </div>
+        <div class="input-group">
+          <label>CHOOSE PASSCODE</label>
+          <input type="password" id="reg-password" placeholder="At least 6 characters" required autocomplete="new-password">
+        </div>
+        <button type="submit" class="btn-action primary">CREATE TRIBESMAN</button>
+      </form>
+
+      <div class="modal-divider"><span>OR</span></div>
+
+      <div class="modal-alt-actions">
+        <button id="btn-modal-guest" class="btn-action secondary">PLAY AS GUEST</button>
+        <button id="btn-modal-web3" class="btn-action web3">🦊 CONNECT WEB3 WALLET</button>
+      </div>
+      <div id="auth-error-msg" class="auth-error hidden"></div>
+    </div>
+  </div>
+
+  <!-- Interactive NPC Dialogue Modal -->
+  <div id="dialogue-modal" class="retro-modal-backdrop hidden">
+    <div class="dialogue-modal-box">
+      <div class="dialogue-header">
+        <div class="dialogue-avatar-container">
+          <canvas id="dialogue-avatar-canvas" width="48" height="48"></canvas>
+        </div>
+        <div class="dialogue-speaker-info">
+          <h3 id="dialogue-speaker-name">Elder Kael</h3>
+          <span id="dialogue-speaker-title" class="dialogue-title-badge">Chieftain of Ash-River</span>
+        </div>
+        <button id="btn-dialogue-close" class="modal-close-btn" title="Close">✖</button>
+      </div>
+      <div class="dialogue-body">
+        <p id="dialogue-text-content">"Welcome to the Ash-River Encampment, traveler. The fires of our ancestors burn bright, but we need fresh cycad timber and copper ores to forge our clan's destiny."</p>
+      </div>
+      <div class="dialogue-footer">
+        <div class="dialogue-options-list" id="dialogue-options">
+          <!-- Dynamic Branching Choices Populated by UIManager -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Crafting Workshop Modal -->
+  <div id="crafting-modal" class="retro-modal-backdrop hidden">
+    <div class="crafting-modal-box">
+      <div class="crafting-modal-header">
+        <div class="crafting-station-title">
+          <span id="crafting-station-icon">🔥</span>
+          <h3 id="crafting-station-name">Clay Smelting Crucible</h3>
+        </div>
+        <button id="btn-crafting-close" class="modal-close-btn" title="Close">✖</button>
+      </div>
+      <div class="crafting-modal-body">
+        <p id="crafting-station-desc" class="crafting-station-desc">Smelt raw copper and tin ores into alloy bronze ingots.</p>
+        <div class="crafting-recipe-grid" id="crafting-recipe-grid">
+          <!-- Recipe Cards Populated by UIManager -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Tribal Stash Vault Modal (50 Slots, 25x Stacking) -->
+  <div id="stash-modal" class="retro-modal-backdrop hidden">
+    <div class="stash-modal-box">
+      <div class="stash-modal-header">
+        <div class="stash-title-info">
+          <span class="stash-icon">📦</span>
+          <div>
+            <h3 style="font-family: 'Cinzel', serif; color: #ffd700; font-size: 18px; margin: 0;">TRIBAL STASH VAULT</h3>
+            <span style="font-size: 12px; color: #94a3b8;">50 Slots • Max 25x Stack per Slot</span>
+          </div>
+        </div>
+        <button id="btn-stash-close" class="modal-close-btn" title="Close">✖</button>
+      </div>
+
+      <div class="stash-modal-body">
+        <div class="stash-section">
+          <div class="stash-section-header">
+            <span>VAULT STORAGE (<span id="stash-occupied-count">0</span>/50 SLOTS)</span>
+            <span class="stash-hint">Click item to withdraw 1x / 5x / 25x</span>
+          </div>
+          <div class="stash-vault-grid" id="stash-vault-grid">
+            <!-- 50 Stash Slots Generated by UI -->
+          </div>
+        </div>
+
+        <div class="stash-inventory-section">
+          <div class="stash-section-header">
+            <span>YOUR INVENTORY (28 SLOTS)</span>
+            <span class="stash-hint">Click item to deposit into vault</span>
+          </div>
+          <div class="stash-inv-grid" id="stash-inventory-grid">
+            <!-- 28 Inventory Transfer Slots Generated by UI -->
+          </div>
+        </div>
+      </div>
+      
+      <div class="stash-modal-footer">
+        <div id="stash-status-msg" class="stash-status">Ready. Click items to transfer between inventory and vault.</div>
+        <div class="stash-transfer-actions">
+          <button id="btn-stash-deposit-all" class="retro-btn" style="color:#ffd700;">Deposit All Items</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Client JavaScript -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

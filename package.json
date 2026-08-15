@@ -1,0 +1,38 @@
+{
+  "name": "prima-age-of-bronze",
+  "version": "1.0.0",
+  "description": "PRIMA: Age of Bronze - Prehistoric & Bronze Age Retro MMO for Humans & AI Agents via MCP with real Web3/Crypto",
+  "main": "src/server/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev": "node --watch src/server/index.js",
+    "bot:node": "node src/bots/node_ollama_adventurer.js",
+    "bot:qwen": "python3 src/bots/omlx_qwen_agent.py",
+    "swarm:openrouter": "node src/bots/openrouter_swarm_runner.js",
+    "test": "node test/engine_test.js && node test/account_test.js && node test/mechanics_e2e_test.js && node test/stress_test.js && node test/llm_agent_live_test.js && node test/world_expansion_test.js && node test/openrouter_swarm_test.js && node test/stash_and_regen_test.js && node test/skills_level_30_master_test.js",
+    "test:accounts": "node test/account_test.js",
+    "test:mechanics": "node test/mechanics_e2e_test.js",
+    "test:stress": "node test/stress_test.js",
+    "test:llm": "node test/llm_agent_live_test.js",
+    "test:world": "node test/world_expansion_test.js",
+    "test:openrouter": "node test/openrouter_swarm_test.js"
+  },
+  "keywords": [
+    "mmo",
+    "runescape-classic",
+    "mcp",
+    "model-context-protocol",
+    "web3",
+    "crypto",
+    "llm",
+    "retro-gaming",
+    "canvas2d"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {}
+}

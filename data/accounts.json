@@ -1,0 +1,7329 @@
+[
+  {
+    "id": "acc_1786779139332_3343",
+    "username": "Shaman_1786779139328",
+    "passwordHash": "d2cdf2791aa64facda7bbe9e880dc73afb334739fdd73b005c29d6915274092d7310729f080678f447a09b0a96f0826119d7fa503c90579a71434c288e6e4e4a",
+    "salt": "c64ae972ac12531f115548ac51e6ca97",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786779139332,
+    "lastLoginAt": 1786779139337
+  },
+  {
+    "id": "acc_1786779366093_8850",
+    "username": "Shaman_1786779366091",
+    "passwordHash": "de19ffdd4fbe235f8bded758e85ce10f8077901a845cd034f88139df836034c622c48dfcf97ffb49f805ff1775e0222368c1192ff50314947899ac4fa82a07a4",
+    "salt": "84fb47e59653562fe878027b1b9f0dbd",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786779366093,
+    "lastLoginAt": 1786779366097
+  },
+  {
+    "id": "acc_1786780125056_9133",
+    "username": "Shaman_1786780125054",
+    "passwordHash": "fc7706dc5ac4caee90aa0d9a984f4a6e6683f3c9818737f4e3ecd4237b75478090cc1e24aa2684305bf32dff25cf3cfb5cd852f6ee1e64dad99f297eb5df547e",
+    "salt": "5c7c04da3de0985f69c99ad15bd6d606",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786780125056,
+    "lastLoginAt": 1786780125061
+  },
+  {
+    "id": "acc_1786780144841_8976",
+    "username": "Shaman_1786780144839",
+    "passwordHash": "0bb0956d616e6d1403e818d7aab3ebf13ae527fe9859b44dd16932fb4e09402a4c21fcb1ac2c88a1b912e484707c5546b64ddd9c2ef0e1f0f8c38fdee57ae351",
+    "salt": "7b73834c29c1ebdfc16792afd22b4859",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786780144841,
+    "lastLoginAt": 1786780144845
+  },
+  {
+    "id": "acc_1786780162457_312",
+    "username": "Shaman_1786780162455",
+    "passwordHash": "b3b08dc14dee594fd36e42d235e97a5639b042f790bb518be89712c932d7f61bc84f281758d81a595dce0b2d3a0c131aa2d4767634fd7e5997ca6be467b5bfcc",
+    "salt": "6de87f97a572af8b095b9db371081006",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786780162457,
+    "lastLoginAt": 1786780162462
+  },
+  {
+    "id": "acc_1786783851232_2591",
+    "username": "Shaman_1786783851229",
+    "passwordHash": "6d56cbb516473b94bb1077cf8e6a2c98855386759e8bf183f2748627fa1dffac466329143ea7f8091501342deb4100f2feb0565c8c1ee0379c31dda562abffa4",
+    "salt": "9e0bfbf8345195f9e71ad33e00a15936",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786783851232,
+    "lastLoginAt": 1786783851237
+  },
+  {
+    "id": "acc_1786783939809_4978",
+    "username": "Shaman_1786783939806",
+    "passwordHash": "9eaa4ce3e2d17414339fc9bfc805a7f74833e39846d28aff618c3ec8a85f47425d6fc73bb8ddb5eaa592a3bb27b38fc388a77e29739c4fd63f76126f2a23de9f",
+    "salt": "2dece6294c674e59e968e3226031d517",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786783939809,
+    "lastLoginAt": 1786783939813
+  },
+  {
+    "id": "acc_1786784029249_5000",
+    "username": "Shaman_1786784029246",
+    "passwordHash": "afd5f5b326395c3d0e3d9b76a71541e86f5640b0b8b5b2a7e451547322eb0365397b52895cf49d1c2e80e8ca01ee726636f6bd063999c366525b2a0baa2b1fdc",
+    "salt": "850894d43fd91a75d4fe3c0366c0f907",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786784029249,
+    "lastLoginAt": 1786784029254
+  },
+  {
+    "id": "acc_1786785985730_6093",
+    "username": "Shaman_1786785985728",
+    "passwordHash": "9652bc609982a799c5b4931655e1290222390743e46cbfc4858106aa7edb09082d0b94b0153b26029bf65e4c7b54ba6669c5619d5195964237fc37ceef3d17f3",
+    "salt": "313a4a869fc7523adc6b3a131527a3df",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786785985730,
+    "lastLoginAt": 1786785985736
+  },
+  {
+    "id": "acc_1786786558796_4700",
+    "username": "Shaman_1786786558793",
+    "passwordHash": "4d0bc42f2262de655bf356979c72265a318bd3aed38ec124315c93f9c4dafd03217010bfc23fbb94d210ccb1ed7253885809217627bfa8837d1a0d3d91d8c757",
+    "salt": "315f5a3c67fa663cc3f9bd0bc50a02b4",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786786558796,
+    "lastLoginAt": 1786786558800
+  },
+  {
+    "id": "acc_1786787414255_5497",
+    "username": "Shaman_1786787414252",
+    "passwordHash": "09beafa9c229d527db0ed170c60ccf9f69bf09e63417e14e240e55b6b23940acd072cffef6d80be63a50383c41efca51fdcf18f3ae9a0d0458e57df3bcb7f26e",
+    "salt": "6745b3be046a735a3c4937c68308b3fd",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786787414255,
+    "lastLoginAt": 1786787414260
+  },
+  {
+    "id": "acc_1786793087469_2505",
+    "username": "Shaman_1786793087466",
+    "passwordHash": "287d3d513197c3d07d5cd0a437d2b2da806197b7b05265c19c8a475f14716cd10d5db4b80521bc44c91807184f81f5677e7c13c0468f6296b3e7086c7b5aa2ee",
+    "salt": "bae62a9a9873798567aeef7fa5c751f4",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786793087469,
+    "lastLoginAt": 1786793087474
+  },
+  {
+    "id": "acc_1786793487909_8069",
+    "username": "Shaman_1786793487906",
+    "passwordHash": "c4b7a1c8d4765358e48e51cf7b9fe7e6ae7e90c05599b6d74973826dfa9aed9aafd3e5bbeef23e81fa3a1f25a1fbdd5aa6a819d94baa784fcbd1aa6d1f4bdd9e",
+    "salt": "67f4913d8952762079eb59a0c77ca3b7",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786793487909,
+    "lastLoginAt": 1786793487915
+  },
+  {
+    "id": "acc_1786794228410_5441",
+    "username": "Shaman_1786794228407",
+    "passwordHash": "ca48420b2ecd8b5557ecdb311fb79a3eebdf40c0426237f5480db075b1ac727a077b632f4808493976b4b5d0375f28ea81758208d32cef917102357ed82b0e84",
+    "salt": "3faced240aadc0f2a94a2d39b8becb5a",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786794228410,
+    "lastLoginAt": 1786794228415
+  },
+  {
+    "id": "acc_1786795023996_4477",
+    "username": "Shaman_1786795023993",
+    "passwordHash": "6b61a678e3266de80051bc4d2aa7b94adbb5af564b174137ba50bc5e41c9c7b61bab86b20a5813887bb140286413812f2f70e1ab9526bbb32174ef9d079bdfa4",
+    "salt": "07dff3f01ac7e3e8cd27346dbd678341",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786795023996,
+    "lastLoginAt": 1786795024000
+  },
+  {
+    "id": "acc_1786795515316_9860",
+    "username": "Shaman_1786795515314",
+    "passwordHash": "a2881043b578f6a8c9bd08c59ed0121ad4a06b9c48bc6ee880e5902195a10973784b31ecaf9f39b9a713a47de480a95654e3f046f49b5948b210eaaaa64b6cb5",
+    "salt": "79b860204652af3443620de99aa5bb1c",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786795515316,
+    "lastLoginAt": 1786795515324
+  },
+  {
+    "id": "acc_1786797326308_953",
+    "username": "Shaman_1786797326305",
+    "passwordHash": "db7ae8f703afed2946412cab8cbc839ad1853fd96c2a382ffb35bd1e619ff0f1c943fc43be7e8fe83a164bb3b10fb5f274a9182b8fdd1462ebc3131a13f18e10",
+    "salt": "21c141d137a90990219a02942a0b1b69",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786797326308,
+    "lastLoginAt": 1786797326312
+  },
+  {
+    "id": "acc_1786797508926_3976",
+    "username": "Shaman_1786797508924",
+    "passwordHash": "1041b6e0fa9f48b76556a339f111581522f39badf14a1c6a12fd8f007a0ab44c6d97fa0aa02267216198a9b1d6e8c0671230f17887b1da810ebed5a511cb1904",
+    "salt": "e9272be7e18d3775774fa7378b894145",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786797508926,
+    "lastLoginAt": 1786797508931
+  },
+  {
+    "id": "acc_1786798635100_9876",
+    "username": "Shaman_1786798635097",
+    "passwordHash": "64185bd581109e422b3d9bc941e654c7e63cdc6767e53d1649cea9b061cfc3d230b40f59bdb3c951750a13417ed8738ac57ed6dd45c07eb21ab6aaae09260802",
+    "salt": "bda72ad9d44e8d838a42f12a3b297072",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786798635100,
+    "lastLoginAt": 1786798635105
+  },
+  {
+    "id": "acc_1786798968124_9018",
+    "username": "Shaman_1786798968121",
+    "passwordHash": "7a54a7e257c405ca2366e3822b9cdd90b0a5ba54ba4137e75951b5d6529def628c7cf42a2e439c3d4dada1b716631a2f8c2ffd673691d617fbf666c06e455a68",
+    "salt": "adfc4a0dd67f21da8640ddd021ccf5ff",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786798968124,
+    "lastLoginAt": 1786798968128
+  },
+  {
+    "id": "acc_1786800277958_5858",
+    "username": "Shaman_1786800277955",
+    "passwordHash": "a60e519237800a9dc19c7517aa70cb4243d944954ecb551e68c7e8b9dd9f75709bb416aced653b631d3ace4e48215bb17f7345e3a519baca8bf9fd7fce5959e2",
+    "salt": "f5339623e2fc9a8748b2439589f2e509",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786800277958,
+    "lastLoginAt": 1786800277962
+  },
+  {
+    "id": "acc_1786800327528_1932",
+    "username": "Shaman_1786800327526",
+    "passwordHash": "f10dbb5febc615bd00307c8c6bebd27ced5d4587fd6601455b4f059c8982f8b0cc7ac133d621bf8a5d374d16ca91360bdca16d515d92c53833b03a09eb4411d0",
+    "salt": "1333fc54fbbf0a639ded1854513f4eeb",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "sprite": "icon_amber_beads",
+          "quantity": 50,
+          "stackable": true
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "sprite": "icon_spear_flint",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "sprite": "icon_axe_bronze",
+          "quantity": 1,
+          "slot": "weapon"
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "sprite": "icon_meat_cooked",
+          "quantity": 1,
+          "stackable": false,
+          "heal": 6
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "sprite": "icon_ingot_bronze",
+          "quantity": 1,
+          "stackable": false
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "sprite": "icon_mammoth_tusk",
+          "quantity": 1,
+          "slot": "head"
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786800327528,
+    "lastLoginAt": 1786800327533
+  },
+  {
+    "id": "acc_1786801665710_3849",
+    "username": "Shaman_1786801665708",
+    "passwordHash": "a311607bbd44ee2326a1b3b2cabc7aa9d3ad1d7c36b2c3a4259786d6393401369d4d3845c7d01173a15b836c6539ad43eec02737a60c466ec60b9876061b4097",
+    "salt": "a0cbdbc1116460fad9f7c1d049752f51",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "stackable": true,
+          "sprite": "icon_amber_beads",
+          "value": 1,
+          "quantity": 50
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "slot": "weapon",
+          "attackBonus": 6,
+          "strengthBonus": 5,
+          "sprite": "icon_spear_flint",
+          "value": 15,
+          "quantity": 1
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "slot": "weapon",
+          "attackBonus": 14,
+          "strengthBonus": 12,
+          "sprite": "icon_axe_bronze",
+          "value": 75,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "slot": "head",
+          "defenseBonus": 25,
+          "sprite": "icon_mammoth_tusk",
+          "value": 5000,
+          "isNft": true,
+          "quantity": 1
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786801665710,
+    "lastLoginAt": 1786801665715
+  },
+  {
+    "id": "acc_1786802772994_6318",
+    "username": "Shaman_1786802772992",
+    "passwordHash": "1d1fb8f2d87c9c0f6a42ab6e3571de1702e1a4b2278135156487354694d3a6cfc79ff083eaf7914b113fca63c9f3fae35bd80a797f47db6d26b8f69224c966f3",
+    "salt": "1ff93833666ce3113f9331cddea52e0a",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "stackable": true,
+          "sprite": "icon_amber_beads",
+          "value": 1,
+          "quantity": 50
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "slot": "weapon",
+          "attackBonus": 6,
+          "strengthBonus": 5,
+          "sprite": "icon_spear_flint",
+          "value": 15,
+          "quantity": 1
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "slot": "weapon",
+          "attackBonus": 14,
+          "strengthBonus": 12,
+          "sprite": "icon_axe_bronze",
+          "value": 75,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "slot": "head",
+          "defenseBonus": 25,
+          "sprite": "icon_mammoth_tusk",
+          "value": 5000,
+          "isNft": true,
+          "quantity": 1
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786802772994,
+    "lastLoginAt": 1786802772999
+  },
+  {
+    "id": "acc_1786802800074_609",
+    "username": "Shaman_1786802800072",
+    "passwordHash": "41bf46ebc3852d6fc6e753152ae925893f7728a73a75ffd6222afc59a925293ecfbfa39e8cfe1e1b8d9f9bc7d4e25aa0bf4b5b72031c398c6a05a6add2b3c318",
+    "salt": "d27396755eb6eb38cdb97c84c80b3682",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "stackable": true,
+          "sprite": "icon_amber_beads",
+          "value": 1,
+          "quantity": 50
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "slot": "weapon",
+          "attackBonus": 6,
+          "strengthBonus": 5,
+          "sprite": "icon_spear_flint",
+          "value": 15,
+          "quantity": 1
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "slot": "weapon",
+          "attackBonus": 14,
+          "strengthBonus": 12,
+          "sprite": "icon_axe_bronze",
+          "value": 75,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "slot": "head",
+          "defenseBonus": 25,
+          "sprite": "icon_mammoth_tusk",
+          "value": 5000,
+          "isNft": true,
+          "quantity": 1
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786802800074,
+    "lastLoginAt": 1786802800084
+  },
+  {
+    "id": "acc_1786802831192_45",
+    "username": "Shaman_1786802831190",
+    "passwordHash": "2e22b5db9c3f3f12efd2be775d0f9fa13d7a73abde89b438fc5f59e254e8bcd69ad1d5653ae52b5eed515bdb1f46a19efc48b351f189602bd2281fd9cbfe6b8d",
+    "salt": "4936a1bbb325ba28403a21bf300b2063",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "stackable": true,
+          "sprite": "icon_amber_beads",
+          "value": 1,
+          "quantity": 50
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "slot": "weapon",
+          "attackBonus": 6,
+          "strengthBonus": 5,
+          "sprite": "icon_spear_flint",
+          "value": 15,
+          "quantity": 1
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "slot": "weapon",
+          "attackBonus": 14,
+          "strengthBonus": 12,
+          "sprite": "icon_axe_bronze",
+          "value": 75,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "slot": "head",
+          "defenseBonus": 25,
+          "sprite": "icon_mammoth_tusk",
+          "value": 5000,
+          "isNft": true,
+          "quantity": 1
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786802831192,
+    "lastLoginAt": 1786802831197
+  },
+  {
+    "id": "acc_1786802900506_6585",
+    "username": "Shaman_1786802900504",
+    "passwordHash": "eabd9e0a1c8c3520c03bf5c6c00d66ea35d439825dc3e0c33ddaa796a6005cec18d8500cfb4db466e97b7fe69def9ed26d5d47d8b58b2b9b7ece870b4483dde6",
+    "salt": "444f338f2c7bae923ac4eaef877fc22c",
+    "walletAddress": null,
+    "character": {
+      "x": 75,
+      "y": 90,
+      "facing": "S",
+      "hp": 10,
+      "maxHp": 10,
+      "spirit": 10,
+      "skills": {
+        "hunting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "strength": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "defense": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "hitpoints": {
+          "xp": 1154,
+          "lvl": 10
+        },
+        "shamanism": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "knapping": {
+          "xp": 450,
+          "lvl": 5
+        },
+        "casting": {
+          "xp": 600,
+          "lvl": 6
+        },
+        "woodcutting": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "foraging": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "cooking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "leatherworking": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "masonry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "fishing": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "husbandry": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "archaeology": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "astronomy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "bartering": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "alchemy": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "trapping": {
+          "xp": 0,
+          "lvl": 1
+        },
+        "sailing": {
+          "xp": 0,
+          "lvl": 1
+        }
+      },
+      "inventory": [
+        {
+          "id": "amber_beads",
+          "name": "Amber Beads",
+          "stackable": true,
+          "sprite": "icon_amber_beads",
+          "value": 1,
+          "quantity": 50
+        },
+        {
+          "id": "spear_flint",
+          "name": "Flint Spear",
+          "slot": "weapon",
+          "attackBonus": 6,
+          "strengthBonus": 5,
+          "sprite": "icon_spear_flint",
+          "value": 15,
+          "quantity": 1
+        },
+        {
+          "id": "axe_bronze",
+          "name": "Cast Bronze Axe",
+          "slot": "weapon",
+          "attackBonus": 14,
+          "strengthBonus": 12,
+          "sprite": "icon_axe_bronze",
+          "value": 75,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "meat_cooked",
+          "name": "Roasted Boar Meat",
+          "stackable": false,
+          "heal": 6,
+          "sprite": "icon_meat_cooked",
+          "value": 12,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "ingot_bronze",
+          "name": "Bronze Ingot",
+          "stackable": false,
+          "sprite": "icon_ingot_bronze",
+          "value": 25,
+          "quantity": 1
+        },
+        {
+          "id": "mammoth_tusk",
+          "name": "Great Mammoth Tusk",
+          "slot": "head",
+          "defenseBonus": 25,
+          "sprite": "icon_mammoth_tusk",
+          "value": 5000,
+          "isNft": true,
+          "quantity": 1
+        },
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "equipment": {
+        "head": null,
+        "cape": null,
+        "neck": null,
+        "weapon": null,
+        "body": null,
+        "shield": null,
+        "legs": null,
+        "hands": null,
+        "feet": null,
+        "ring": null
+      },
+      "bankStorage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "amberBeads": 50
+    },
+    "createdAt": 1786802900506,
+    "lastLoginAt": 1786802900511
+  }
+]

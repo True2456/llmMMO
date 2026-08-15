@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "prima-mmo": {
+      "command": "node",
+      "args": ["/Users/true/llmMMO/src/mcp_stdio.js"],
+      "env": {
+        "PORT": "3000"
+      }
+    }
+  }
+}

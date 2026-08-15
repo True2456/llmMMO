@@ -1,0 +1,15 @@
+{
+  "name": "prima_look",
+  "description": "Perceive immediate surroundings, nearby entities, beasts (Dire Wolves, Mammoths), copper boulders, cycad trees, and ground items in PRIMA MMO.",
+  "parameters": {
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "radius": {
+        "type": "integer",
+        "description": "Perception radius in tiles (default 12, max 20)",
+        "default": 12
+      }
+    }
+  }
+}

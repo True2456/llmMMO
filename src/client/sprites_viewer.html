@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRIMA: Age of Bronze — Sprite Inspector & Asset Atlas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Press+Start+2P&family=VT323&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0f111a;
+      color: #e2e8f0;
+      font-family: 'Inter', sans-serif;
+      padding: 30px;
+    }
+    header {
+      margin-bottom: 25px;
+      border-bottom: 2px solid #2d3748;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h1 {
+      font-family: 'Cinzel', serif;
+      color: #ffd700;
+      font-size: 26px;
+      letter-spacing: 1px;
+    }
+    .badge {
+      background: #1e293b;
+      border: 1px solid #3b82f6;
+      color: #60a5fa;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-family: 'Press Start 2P', monospace;
+      font-size: 10px;
+    }
+    .section-title {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 13px;
+      color: #f6ad55;
+      margin: 30px 0 15px 0;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #334155;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .sprite-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 16px;
+    }
+    .sprite-card {
+      background: #182030;
+      border: 1px solid #2d3748;
+      border-radius: 8px;
+      padding: 14px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: transform 0.15s ease, border-color 0.15s ease;
+    }
+    .sprite-card:hover {
+      transform: translateY(-2px);
+      border-color: #ffd700;
+    }
+    .preview-box {
+      width: 100px;
+      height: 100px;
+      background: #090d16;
+      border: 1px dashed #475569;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      position: relative;
+      background-image: 
+        linear-gradient(45deg, #121826 25%, transparent 25%), 
+        linear-gradient(-45deg, #121826 25%, transparent 25%), 
+        linear-gradient(45deg, transparent 75%, #121826 75%), 
+        linear-gradient(-45deg, transparent 75%, #121826 75%);
+      background-size: 16px 16px;
+      background-position: 0 0, 0 8px, 8px -8px, -8px 0px;
+    }
+    .preview-box canvas {
+      image-rendering: pixelated;
+      image-rendering: crisp-edges;
+      transform: scale(2.5);
+      transform-origin: center;
+    }
+    .sprite-key {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 9px;
+      color: #93c5fd;
+      margin-bottom: 4px;
+      word-break: break-all;
+    }
+    .sprite-dim {
+      font-size: 11px;
+      color: #64748b;
+      font-family: 'VT323', monospace;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>🦣 PRIMA: Age of Bronze — Sprite Atlas Inspector</h1>
+      <p style="color: #94a3b8; font-size: 13px; margin-top: 4px;">Authoritative 16-Bit Pixel Art Asset Catalog & Inspection Suite</p>
+    </div>
+    <div id="total-count" class="badge">Loading Sprites...</div>
+  </header>
+
+  <div id="inspector-container"></div>
+
+  <script type="module">
+    import { SpriteEngine } from './js/sprites.js';
+
+    const spriteEngine = new SpriteEngine();
+    const allSprites = Array.from(spriteEngine.sprites.entries());
+
+    document.getElementById('total-count').textContent = `TOTAL ASSETS: ${allSprites.length}`;
+
+    const categories = [
+      {
+        title: '🐾 1. Fauna, Wildlife & Boss Beasts',
+        filter: ([k]) => k.startsWith('monster_')
+      },
+      {
+        title: '🧔 2. Town Elders, Artisans & Citizens',
+        filter: ([k]) => k.startsWith('npc_')
+      },
+      {
+        title: '⚒️ 3. Specialized Crafting Stations & World Objects',
+        filter: ([k]) => k.startsWith('node_') || k.startsWith('struct_')
+      },
+      {
+        title: '📦 4. 24x24 Ground Items & Inventory Icons',
+        filter: ([k]) => k.startsWith('icon_')
+      },
+      {
+        title: '🌍 5. Terrain, Biomes & Environment Tiles',
+        filter: ([k]) => k.startsWith('tile_')
+      },
+      {
+        title: '🏃 6. Player Directions & Animation Frames',
+        filter: ([k]) => k.startsWith('player_')
+      }
+    ];
+
+    const container = document.getElementById('inspector-container');
+
+    for (const cat of categories) {
+      const matched = allSprites.filter(cat.filter);
+      if (matched.length === 0) continue;
+
+      const titleEl = document.createElement('div');
+      titleEl.className = 'section-title';
+      titleEl.textContent = `${cat.title} (${matched.length})`;
+      container.appendChild(titleEl);
+
+      const gridEl = document.createElement('div');
+      gridEl.className = 'sprite-grid';
+
+      for (const [key, sourceCanvas] of matched) {
+        const card = document.createElement('div');
+        card.className = 'sprite-card';
+
+        const preview = document.createElement('div');
+        preview.className = 'preview-box';
+
+        const viewCanvas = document.createElement('canvas');
+        viewCanvas.width = sourceCanvas.width;
+        viewCanvas.height = sourceCanvas.height;
+        const ctx = viewCanvas.getContext('2d');
+        ctx.drawImage(sourceCanvas, 0, 0);
+
+        preview.appendChild(viewCanvas);
+
+        const keyLabel = document.createElement('div');
+        keyLabel.className = 'sprite-key';
+        keyLabel.textContent = key;
+
+        const dimLabel = document.createElement('div');
+        dimLabel.className = 'sprite-dim';
+        dimLabel.textContent = `${sourceCanvas.width}x${sourceCanvas.height} px`;
+
+        card.appendChild(preview);
+        card.appendChild(keyLabel);
+        card.appendChild(dimLabel);
+        gridEl.appendChild(card);
+      }
+
+      container.appendChild(gridEl);
+    }
+  </script>
+</body>
+</html>
